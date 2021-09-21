@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+<title>
+To Do List!
+</title>
+<link rel="stylesheet" type = "text/css" href = "ToDoList.CSS"/>
+<script type="text/javascript" src="ToDoList.JS"></script> 
+</head>
+
+
+<body>
+
+    <h1 id="myHeader">TO DO List</h1> <!--header-->
+    <!-- A button and a text field -->
+    <input id = "addButton" type = "button" value = "Add" onclick = "addTask()" /> 
+    <input id = "input" type = "text" placeholder = "enter task... " />
+
+<hr>
+
+<!-- unordered list -->
+<ul id="tasks">
+  <li>
+    <!-- the check mark button ,  the value number represents the "check mark" -->
+    <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" /> 
+    <!-- the cross mark button, the value number represents the "cross mark" -->
+    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+    <!-- make todo list -->
+    <input type="button" class="important" onclick="important(this.parentNode)" value="!" />
+    make todo list
+  </li>
+  
+</ul>
+<hr>
+
+<div id = "divabout" ></div>
+<input type="button" value = "About" onclick="doAbout()" />
+<input type="button" value = "Clear" onclick="clearAbout()" />
+
+
+    
+    
+
+</body>
+</html>
